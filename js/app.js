@@ -19,26 +19,7 @@ function setTextElementById(elementId, newValue) {
     return textElement;
 }
 
-document.getElementById('per-player-calculate').addEventListener('click',function(){
-    const inputField = getElementByInputField('per-player');
-    const textField = getElementByTextField('total-player');
-    const list = document.getElementById('name-list');
-    const listLength = list.childNodes.length-1;
-    const totalPlayer = textField+ inputField*listLength;
-    setTextElementById('total-player', totalPlayer);
-})
 
-document.getElementById('total-claculate').addEventListener('click',function () {
-    const coach = getElementByInputField('coach');
-    const manager = getElementByInputField('manager');
-    const totalPlayer = getElementByTextField('total-player');
-    const textField = getElementByTextField('final-result');
-
-    const totalExpance = coach+manager+textField+totalPlayer;
-
-    setTextElementById('final-result', totalExpance);
-
-})
 
 
 
@@ -65,3 +46,24 @@ for (const button of buttons) {
 
 
 }
+
+document.getElementById('per-player-calculate').addEventListener('click',function(){
+    const inputField = getElementByInputField('per-player');
+    const textField = getElementByTextField('total-player');
+    const list = document.getElementById('name-list');
+    const listLength = list.childNodes.length-1;
+    const totalPlayer = textField+ inputField*listLength;
+    setTextElementById('total-player', totalPlayer);
+})
+
+document.getElementById('total-claculate').addEventListener('click',function () {
+    const coach = getElementByInputField('coach');
+    const manager = getElementByInputField('manager');
+    const totalPlayer = getElementByTextField('total-player');
+    const textField = getElementByTextField('final-result');
+
+    const totalExpance = coach+manager+textField+totalPlayer;
+
+    setTextElementById('final-result', totalExpance);
+
+})
