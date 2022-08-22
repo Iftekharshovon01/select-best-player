@@ -21,9 +21,6 @@ function setTextElementById(elementId, newValue) {
 
 
 
-
-
-
 const buttons = document.getElementsByClassName('player');
 for (const button of buttons) {
     button.addEventListener('click',function(event){

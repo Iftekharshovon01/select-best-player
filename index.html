@@ -93,7 +93,8 @@
                 <div class="grid grid-cols-1 gap-4">
                     <div class="card w-full bg-base-100 shadow">
                         <div class="card-body items-center text-center">
-                            <h2 class="card-title">Selected - V</h2>
+                            <h2 class="card-title underline">Selected - V</h2>
+                            <hr>
                             <ol id="name-list">
 
                             </ol>
@@ -101,18 +102,18 @@
                     </div>
                     <div class="card w-full bg-base-100 shadow">
                         <div class="card-body items-center text-center">
-                            <h2 class="card-title">Budget</h2>
+                            <h2 class="card-title underline">Budget</h2>
                             <p>Per Player</p>
-                            <input id="per-player" type="text">
+                            <input id="per-player" class="text-center text-rose-600" type="text">
                             <button id="per-player-calculate" class="btn btn-primary">Calculate</button>
                             <p>Player Expenses</p>
                             <p class="text-slate-50	">$<span id="total-player">0000</span></p>
                         </div>
                         <div class="card-body items-center text-center">
                             <p>Manager</p>
-                            <input id="manager" type="text">
+                            <input id="manager" class="text-rose-600 text-center" type="text">
                             <p>Coach</p>
-                            <input id="coach" type="text">
+                            <input id="coach" class="text-rose-600 text-center" type="text">
                             <button class="btn btn-primary" id="total-claculate">Calculate Total</button>
                             <p>Total</p>
                             <p class="text-red-700">$<span id="final-result">0000</span></p>
