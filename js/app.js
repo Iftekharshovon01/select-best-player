@@ -19,6 +19,16 @@ function setTextElementById(elementId, newValue) {
     return textElement;
 }
 
+document.getElementById('per-player-calculate').addEventListener('click',function(){
+    const inputField = getElementByInputField('per-player');
+    const textField = getElementByTextField('total-player');
+    const list = document.getElementById('name-list');
+    const listLength = list.childNodes.length-1;
+    const totalPlayer = textField+ inputField*listLength;
+    setTextElementById('total-player', totalPlayer);
+})
+
+
 
 
 
