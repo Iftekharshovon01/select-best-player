@@ -28,7 +28,7 @@
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Lionel Messi</h2>
                             <div class="card-actions">
-                            <button class="btn btn-primary">Select</button>
+                            <button class="btn btn-primary player">Select</button>
                             </div>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Neymar Jr</h2>
                             <div class="card-actions">
-                            <button class="btn btn-primary">Select</button>
+                            <button class="btn btn-primary player"  >Select</button>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Kylian Mbappé</h2>
                             <div class="card-actions">
-                            <button class="btn btn-primary">Select</button>
+                            <button class="btn btn-primary player"  >Select</button>
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Vítor Machado</h2>
                             <div class="card-actions">
-                            <button class="btn btn-primary">Select</button>
+                            <button class="btn btn-primary player"  >Select</button>
                             </div>
                         </div>
                     </div>
@@ -72,7 +72,7 @@
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Sergio Ramos</h2>
                             <div class="card-actions">
-                            <button class="btn btn-primary">Select</button>
+                            <button class="btn btn-primary player"  >Select</button>
                             </div>
                         </div>
                     </div>
@@ -83,7 +83,7 @@
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Renato Sanches</h2>
                             <div class="card-actions">
-                            <button class="btn btn-primary">Select</button>
+                            <button class="btn btn-primary player"  >Select</button>
                             </div>
                         </div>
                     </div>
@@ -94,31 +94,28 @@
                     <div class="card w-full bg-base-100 shadow">
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Selected - V</h2>
-                            <table>
-                                <tr>
-                                    <td>1</td>
-                                    <td class="text-slate-50 px-5">Lionel Messi</td>
-                                </tr>
-                            </table>
+                            <ol id="name-list">
+
+                            </ol>
                         </div>
                     </div>
                     <div class="card w-full bg-base-100 shadow">
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Budget</h2>
                             <p>Per Player</p>
-                            <input type="text">
-                            <button class="btn btn-primary">Calculate</button>
+                            <input id="per-player" type="text">
+                            <button id="per-player-calculate" class="btn btn-primary">Calculate</button>
                             <p>Player Expenses</p>
-                            <p class="text-slate-50	">$<span>0000</span></p>
+                            <p class="text-slate-50	">$<span id="total-player">0000</span></p>
                         </div>
                         <div class="card-body items-center text-center">
                             <p>Manager</p>
-                            <input type="text">
+                            <input id="manager" type="text">
                             <p>Coach</p>
-                            <input type="text">
-                            <button class="btn btn-primary">Calculate Total</button>
+                            <input id="coach" type="text">
+                            <button class="btn btn-primary" id="total-claculate">Calculate Total</button>
                             <p>Total</p>
-                            <p class="text-red-700">$<span>0000</span></p>
+                            <p class="text-red-700">$<span id="final-result">0000</span></p>
                         </div>
                     </div>
                     </div>
