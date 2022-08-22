@@ -1,3 +1,24 @@
+function getElementByInputField(elementId) {
+    const getValue = document.getElementById(elementId);
+        const getValueString = getValue.value;
+        const getValueNew = parseFloat(getValueString);
+        getValue.value= '';
+        return getValueNew;
+}
+
+function getElementByTextField(elementId) {
+    const getElemnt = document.getElementById(elementId);
+    const getElemntString = getElemnt.innerText;
+    const setElementNumber = parseFloat(getElemntString);
+    return setElementNumber;
+}
+
+function setTextElementById(elementId, newValue) {
+    const textElement = document.getElementById(elementId);
+    textElement.innerText = newValue; 
+    return textElement;
+}
+
 
 
 
