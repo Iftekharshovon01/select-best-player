@@ -28,7 +28,17 @@ document.getElementById('per-player-calculate').addEventListener('click',functio
     setTextElementById('total-player', totalPlayer);
 })
 
+document.getElementById('total-claculate').addEventListener('click',function () {
+    const coach = getElementByInputField('coach');
+    const manager = getElementByInputField('manager');
+    const totalPlayer = getElementByTextField('total-player');
+    const textField = getElementByTextField('final-result');
 
+    const totalExpance = coach+manager+textField+totalPlayer;
+
+    setTextElementById('final-result', totalExpance);
+
+})
 
 
 
